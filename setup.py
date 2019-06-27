@@ -19,7 +19,7 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Operating System :: OS Independent',
-        'License :: GNU GPLv3',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Intended Audience :: Developers',
         'Programming Language :: Python',
         'Topic :: Text Processing :: Filters',
