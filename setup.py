@@ -1,4 +1,5 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -14,7 +15,7 @@ setup(
     url='https://github.com/oruelle/md_mermaid',
     py_modules=['md_mermaid'],
     install_requires = ['markdown>=2.5'],
-    packages=setuptools.find_packages(),
+    packages=find_packages(),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Operating System :: OS Independent',
