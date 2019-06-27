@@ -6,7 +6,7 @@ Adds mermaid parser (like github-markdown) to standard Python-Markdown code bloc
 
 Original code Copyright 2018-2020 [Olivier Ruelle].
 
-License: [BSD](http://www.opensource.org/licenses/bsd-license.php)
+License: GNU GPLv3
 
 """
 
@@ -54,7 +54,7 @@ class MermaidPreprocessor(Preprocessor):
             elif in_mermaid_code:
                 new_lines.append(line.strip())
             else:
-                
+
                 new_lines.append(line)
 
             old_line = line
@@ -79,4 +79,3 @@ class MermaidExtension(Extension):
 
 def makeExtension(**kwargs):  # pragma: no cover
     return MermaidExtension(**kwargs)
-
