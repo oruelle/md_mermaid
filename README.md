@@ -1,16 +1,17 @@
 # md_mermaid
+
 mermaid extension for Python-Markdown to add support for mermaid graph inside markdown file
 
 ## Installation
 
-* pip (only python version >=3.x) :
+For `pip` installation (only python version >=3.x) :
 
 ~~~shell
 pip install markdown
 pip install md-mermaid
 ~~~
 
-## Usage
+## Usage
 
 In your python script :
 
