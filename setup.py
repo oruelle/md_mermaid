@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='md_mermaid',
-    version='0.1',
+    version='0.1.1',
     author='Olivier Ruelle',
     author_email='olivier.ruelle@yahoo.com',
     description='Python-Markdown extension to add support for mermaid graph inside markdown file.',
