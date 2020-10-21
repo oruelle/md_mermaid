@@ -67,8 +67,19 @@ class MermaidPreprocessor(Preprocessor):
 
         if is_mermaid:
             new_lines.append('')
-            #new_lines.append('<script src="https://cdn.rawgit.com/knsv/mermaid/0.5.8/dist/mermaid.min.js"></script>')
-            new_lines.append('<script>mermaid.initialize({startOnLoad:true});</script>')
+            # This will initialize mermaid renderer. It's done only when the HTML document is ready,
+            # to ensure the loading of mermaid.js file is finished.
+            new_lines.append('''<script>
+                    function initializeMermaid() {
+                        mermaid.initialize({startOnLoad:true})
+                    }
+            
+                    if (document.readyState === "complete" || document.readyState === "interactive") {
+                        setTimeout(initializeMermaid, 1);
+                    } else {
+                        document.addEventListener("DOMContentLoaded", initializeMermaid);
+                    }
+            </script>''')
 
         return new_lines
 
