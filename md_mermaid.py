@@ -33,8 +33,6 @@ class MermaidPreprocessor(Preprocessor):
         in_mermaid_code = False
         is_mermaid = False
         for line in lines:
-            # Strip non printable characters
-            line = strip_notprintable(line)
             # Wait for starting line with MermaidRegex (~~~ or ``` following by [mM]ermaid )
             if not in_mermaid_code:
                 m_start = MermaidRegex.match(line)
@@ -58,9 +56,8 @@ class MermaidPreprocessor(Preprocessor):
                 new_lines.append("")
                 m_end = None
             elif in_mermaid_code:
-                new_lines.append(line.strip())
+                new_lines.append(strip_notprintable(line).strip())
             else:
-
                 new_lines.append(line)
 
             old_line = line
