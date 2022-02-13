@@ -1,3 +1,22 @@
+Metadata-Version: 2.1
+Name: obsidianhtml-md-mermaid-fork
+Version: 0.1.5
+Summary: Bugfix special characters of md_mermaid, because the dev doesn't want to fix the bug.
+Home-page: https://github.com/obsidian-html/md_mermaid
+Author: https://github.com/dwrolvink
+Author-email: dwrolvink@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # md_mermaid
 > This is a fork that we had to make to publish ObsidianHTML without the bug in the original md_mermaid package. The rest of this readme comes from there.
 
@@ -74,3 +93,5 @@ The `<script>...</script>` line appears only once even if there are several grap
 >
 > * mermaid.css (optional, can be customised)
 > * mermaid.min.js (can be download here [here](https://unpkg.com/mermaid@8.1.0/dist/)) 
+
+
