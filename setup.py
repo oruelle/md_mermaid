@@ -5,11 +5,11 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='obsidianhtml_md_mermaid_fork',
-    version='0.1.5',
-    author='https://github.com/dwrolvink',
-    author_email='dwrolvink@protonmail.com',
-    description='Bugfix special characters of md_mermaid, because the dev doesn\'t want to fix the bug.',
+    name='md_mermaid',
+    version='0.1.1',
+    author='Olivier Ruelle',
+    author_email='olivier.ruelle@yahoo.com',
+    description='Python-Markdown extension to add support for mermaid graph inside markdown file.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/obsidian-html/md_mermaid',
