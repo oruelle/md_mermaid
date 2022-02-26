@@ -1,5 +1,4 @@
 # md_mermaid
-> This is a fork that we had to make to publish ObsidianHTML without the bug in the original md_mermaid package. The rest of this readme comes from there.
 
 mermaid extension for Python-Markdown to add support for mermaid graph inside markdown file
 
