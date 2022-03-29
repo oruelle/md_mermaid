@@ -26,6 +26,7 @@ MermaidRegex = re.compile(r"^(?P<mermaid_sign>[\~\`]){3}[\ \t]*[Mm]ermaid[\ \t]*
 
 class MermaidPreprocessor(Preprocessor):
     def run(self, lines):
+        old_line = ""
         new_lines = []
         mermaid_sign = ""
         m_start = None
