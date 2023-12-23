@@ -16,9 +16,6 @@ from markdown.preprocessors import Preprocessor
 import re
 import string
 
-def strip_notprintable(myStr):
-    return ''.join(filter(lambda x: x in string.printable, myStr))
-
 MermaidRegex = re.compile(r"^(?P<mermaid_sign>[\~\`]){3}[\ \t]*[Mm]ermaid[\ \t]*$")
 
 
@@ -57,7 +54,7 @@ class MermaidPreprocessor(Preprocessor):
                 new_lines.append("")
                 m_end = None
             elif in_mermaid_code:
-                new_lines.append(strip_notprintable(line).strip())
+                new_lines.append(line)
             else:
                 new_lines.append(line)
 
